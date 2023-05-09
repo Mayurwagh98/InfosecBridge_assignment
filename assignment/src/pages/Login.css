@@ -35,3 +35,6 @@
     margin-top: 15px;
     font-weight: bold;
 }
+.main_login_div > Button > span{
+    color: white;
+}

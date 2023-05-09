@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import "./Landing.css";
@@ -7,6 +7,10 @@ import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
   let navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="main_landing_div">

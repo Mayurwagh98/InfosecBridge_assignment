@@ -1,11 +1,13 @@
-import React from "react";
-import Box from "@mui/material/Box";
+import React, { useEffect } from "react";
 import TextField from "@mui/material/TextField";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import "./Login.css";
 
 const Login = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="main_login_div">
       <h1>Signin to your PopX account</h1>
@@ -15,7 +17,7 @@ const Login = () => {
         id="outlined-basic1"
         label="Email"
         variant="outlined"
-        style={{ margin: "35px 0 0 0px", width: "335px"}}
+        style={{ margin: "35px 0 0 0px", width: "335px" }}
       />
       <TextField
         id="outlined-basic2"
@@ -23,7 +25,7 @@ const Login = () => {
         variant="outlined"
         style={{ margin: "20px 0 0 0px", width: "335px" }}
       />
-      <Button variant="contained">Login</Button>
+      <Button variant="contained" disabled><span>Login</span></Button>
     </div>
   );
 };

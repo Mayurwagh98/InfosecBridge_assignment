@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import "./Signup.css";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  let navigate = useNavigate();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className="main_signup_div">
       <h1>Create your PopX account</h1>
@@ -58,6 +65,7 @@ const Signup = () => {
             opacity: 1,
             fonWweight: "bold",
           }}
+          onClick={() => navigate("/profile")}
         >
           Create Account
         </Button>
