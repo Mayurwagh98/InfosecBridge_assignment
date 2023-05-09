@@ -1,6 +1,8 @@
 nav {
     /* width: 100%; */
-    background-color: #222;
+    /* background-color: #222; */
+    background: #8774ad 0% 0% no-repeat padding-box;
+    opacity: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
